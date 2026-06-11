@@ -11,28 +11,28 @@ const tech = [
 
 export default function TechStack() {
   return (
-    <section className="py-20 bg-surface-50 dark:bg-surface-900/50 border-t border-surface-200 dark:border-surface-800">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-brand-50/50 border-t border-ink-100">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <div className="text-center mb-12">
-          <p className="text-sm font-semibold text-primary-600 dark:text-primary-400 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-brand-600 uppercase tracking-[0.15em] mb-4">
             Built with
           </p>
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-surface-900 dark:text-white">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink-950">
             Modern, proven technologies
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 stagger-children">
           {tech.map((item) => (
             <div
               key={item.name}
-              className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white dark:bg-surface-800/50 border border-surface-200 dark:border-surface-700 text-center"
+              className="flex flex-col items-center gap-2.5 p-5 rounded-xl bg-white border border-ink-100 hover:border-brand-200 hover:shadow-md hover:shadow-ink-900/[0.04] transition-all duration-300 hover:-translate-y-0.5 text-center"
             >
               <span className="text-2xl">{item.icon}</span>
-              <span className="text-sm font-semibold text-surface-900 dark:text-white">
+              <span className="text-sm font-semibold text-ink-800">
                 {item.name}
               </span>
-              <span className="text-xs text-surface-500">{item.role}</span>
+              <span className="text-xs text-ink-400">{item.role}</span>
             </div>
           ))}
         </div>
