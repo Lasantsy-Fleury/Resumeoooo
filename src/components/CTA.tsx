@@ -29,16 +29,25 @@ export default function CTA() {
 
         {/* Trust badges */}
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mt-12">
-          {[
-            { icon: '🔑', text: 'No API key needed' },
-            { icon: '🔒', text: 'Your data stays private' },
-            { icon: '💚', text: '100% free & open source' },
-          ].map((badge) => (
-            <div key={badge.text} className="flex items-center gap-2 text-gray-500 text-sm">
-              <span>{badge.icon}</span>
-              <span>{badge.text}</span>
-            </div>
-          ))}
+          <div className="flex items-center gap-2 text-gray-500 text-sm">
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+            </svg>
+            <span>No API key needed</span>
+          </div>
+          <div className="flex items-center gap-2 text-gray-500 text-sm">
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+              <path d="M7 11V7a5 5 0 0110 0v4" />
+            </svg>
+            <span>Your data stays private</span>
+          </div>
+          <div className="flex items-center gap-2 text-gray-500 text-sm">
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>100% free &amp; open source</span>
+          </div>
         </div>
       </div>
     </section>

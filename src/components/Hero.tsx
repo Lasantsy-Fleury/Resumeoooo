@@ -10,10 +10,9 @@ export default function Hero() {
           <div>
             {/* Badge */}
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-accent-pill text-accent text-sm font-medium mb-8">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
-              </span>
+              <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 2.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM6.5 7h2v4.5h1V12h-3V7h.5z" />
+              </svg>
               Open Source · No Signup Required
             </div>
 

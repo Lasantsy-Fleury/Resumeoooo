@@ -9,7 +9,7 @@ const steps = [
           <svg className="w-9 h-9 text-accent/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
           </svg>
-          <span className="text-xs text-accent/60 font-medium">Drop file</span>
+          <span className="text-xs text-accent/60 font-medium">PDF, TXT, or URL</span>
         </div>
         <div className="flex gap-2">
           {['PDF', 'TXT', 'URL'].map((fmt) => (
@@ -50,7 +50,7 @@ const steps = [
           </div>
         </div>
         <div className="flex flex-wrap gap-1.5 pt-1">
-          {['Key1', 'Key2', 'Key3', 'Key4'].map((kw) => (
+          {['NLP', 'TextRank', 'LLM', 'RAG'].map((kw) => (
             <span key={kw} className="px-2 py-0.5 rounded-full bg-accent-pill text-accent text-[10px] font-medium">
               {kw}
             </span>

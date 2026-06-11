@@ -82,9 +82,9 @@ export default function Demo() {
                   </div>
                   <div className="text-center">
                     <p className="text-base font-semibold text-ink mb-1">
-                      Drop your file here or click to browse
+                      Drop your document here
                     </p>
-                    <p className="text-sm text-ink-muted">Supports PDF, TXT, and URLs</p>
+                    <p className="text-sm text-ink-muted">PDF, TXT, or paste a URL</p>
                   </div>
                   <div className="flex gap-2">
                     {['PDF', 'TXT', 'URL'].map((fmt) => (
